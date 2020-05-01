@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e0ed13508e5b8e5798397f626099f107322a829e15e5f14f0841f65d3b60a0d9
+-- hash: 48e8bbf5320ca709de156c5c1a40bd025476273bf391c5451066f4d289a2e652
 
 name:           myproject
 version:        0.1.0.0
@@ -28,6 +28,8 @@ source-repository head
 library
   exposed-modules:
       Ch4
+      Ch5
+      Ch6
       Lib
   other-modules:
       Paths_myproject
