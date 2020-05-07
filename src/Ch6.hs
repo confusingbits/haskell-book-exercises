@@ -6,7 +6,7 @@ instance Eq Trivial where
     Trivial' == Trivial' = True
 
 data DayOfWeek = Mon | Tue | Weds | Thu | Fri | Sat | Sun
-    deriving Show
+    deriving (Show, Ord)
 
 instance Eq DayOfWeek where
     (==) Mon Mon = True
@@ -100,3 +100,21 @@ instance (Eq a, Eq b) => Eq (EitherOr a b) where
     (==) (Goodbye v) (Goodbye v') = v == v'
 
 -- 6.6 ...
+-- divideThenAdd :: Num a => a -> a -> a
+-- divideThenAdd x y = (x - y) + 1
+
+foo = Mon > Tue
+
+-- instance Ord DayOfWeek where
+--     compare Fri Fri = EQ 
+--     compare Fri _ = GT 
+--     compare _ Fri = LT
+--     compare _ _ = EQ
+
+-- will they work
+--1. yes
+--2. LT
+--3. no, mismatched types
+--4. false
+
+-- gimme more operations
