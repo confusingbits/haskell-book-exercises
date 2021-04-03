@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 48e8bbf5320ca709de156c5c1a40bd025476273bf391c5451066f4d289a2e652
+-- hash: 6270847ba108ae05a7bad070a8916a00f6f21e380945a3fcb7ffa2cb61a30ca4
 
 name:           myproject
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       Ch4
       Ch5
       Ch6
+      Clash
       Lib
   other-modules:
       Paths_myproject
